@@ -1,6 +1,15 @@
 //like the importing statements 
 const express = require('express')
-
+const mongoose = require('mongoose')
+const db = "mongodb+srv://Satish:rggZjcypRntujcgj@pkdummy-oksws.mongodb.net/test?retryWrites=true&w=majority"
+//mongoDB connection
+mongoose.connect(db,err=>{
+    if(err){
+        console.log('Error:'+err)
+    }else{
+        console.log('PK mongoDB connected')
+    }
+})
 //router configuration
 const router = express.Router()
 
