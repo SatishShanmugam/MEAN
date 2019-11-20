@@ -21,7 +21,7 @@ const app = new express()
 
 //dummy get call
 app.get('/',(req,res) =>{
-    res.send('Hi from the MEAN stack server')
+    res.send('Hi from the MEAN stack server from index.js')
 })
 
 //starting to listen the express server here
