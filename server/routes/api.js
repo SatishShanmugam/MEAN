@@ -14,7 +14,7 @@ mongoose.connect(db,err=>{
     }else{
         console.log('PK mongoDB connected')
     }
-})
+},{ useNewUrlParser: true })
 //router configuration
 const router = express.Router()
 
@@ -23,6 +23,7 @@ router.get('/',(req,res)=>{
     // res.send('Sent From MEAN API') 
     Player.find((err,docs)=>{
         if(!err){res.send(docs);}
+        else{ console.log('Error:'+err)}
       }); 
  })
 // get particular id call when just api is mentioned
@@ -33,10 +34,11 @@ router.get('/',(req,res)=>{
     else{
         Player.findById(req.params.id,(err,docs)=>{
             if(!err){res.send(docs);}
+            else{ console.log('Error:'+err)}
           }); 
     }
  })
-//post method to save new play
+//post method to save new player
  router.post('/addplayer',(req,res)=>{
     let userData = req.body
     let user = new Player(userData)
@@ -48,5 +50,27 @@ router.get('/',(req,res)=>{
         }
     })
 })
+//updating a particular player details
+router.put('/:id',(req,res)=>{
+    if(!ObjectId.isValid(req.params.id)){
+        return res.status(400).send(`No record with id:${req.parms.id}`)
+    }
+    let userData = req.body
+    //the new = true is to mentioned that callback method should have the current updated data rather than all data as response
+    Player.findByIdAndUpdate(req.params.id,{$set:userData},{new:true},(err,doc)=>{
+        if(!err){res.send(doc);}
+        else{ console.log('Error:'+err)}
+    })
+ })
+ //deletion of particular player details
+router.delete('/:id',(req,res)=>{
+    if(!ObjectId.isValid(req.params.id)){
+        return res.status(400).send(`No record with id:${req.parms.id}`)
+    }
+    Player.findByIdAndRemove(req.params.id,(err,doc)=>{
+        if(!err){res.send(doc);}
+        else{ console.log('Error:'+err)}
+    })
+ })
  //exporting router
  module.exports = router
