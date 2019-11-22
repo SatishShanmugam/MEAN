@@ -45,6 +45,7 @@ router.get('/',(req,res)=>{
     user.save((error,addPlayer)=>{
         if(error){
             console.log('Error:'+error)
+            res.status(400).send(error)
         }else{
             res.status(200).send(addPlayer)
         }
