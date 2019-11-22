@@ -1,0 +1,56 @@
+@import '../../scss/vars';
+.navbar{
+    height: 38px;
+    background:$navbar-theme;
+    .commonstylemenu{
+        margin-left: 8px;
+        float: left;
+        color:#fff;
+        font-family: $font-global-family;
+        font-size: 18px;
+        .menulist{
+            display:inline-block;
+            padding:8.5px 20px;
+        }
+        .menushades:hover{
+            color:white;
+            background:gray;
+            cursor: pointer;
+        }
+        div a {
+            color: white;
+            text-decoration: none;
+          }
+    }
+    .search-container{
+        float: right;
+        margin-top:3px;
+        .search-placeholder{
+            width: 307px;
+            height: 30px;
+            background: #4a4a4a;
+            border: none;
+            color:#fff;
+            font-family: $font-global-family;
+            font-size: 14px;
+            padding-left: 10px;
+        }
+        .search-button{
+            width: 78px;
+            height: 30px;
+            margin-right: 8px;
+            margin-left: 8px;
+            background: #3b5db3;
+            border: none;
+            color:#fff;
+            font-family:$font-global-family;
+            font-size: 14px;
+        }
+        ::placeholder { 
+            color:#fff; 
+        }   
+    }
+}
+
+
+

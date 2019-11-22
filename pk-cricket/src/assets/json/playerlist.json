@@ -1,0 +1,82 @@
+{
+    "playerdetails": [ {
+				"id": 1001,
+         "name": "AB de Villiers",
+				"position": 1,
+				"rating": 1089,
+				"country": "SA"
+        }, {
+            
+         "id": 1002,
+        "name": "Virat Kohli",
+				"position": 2,
+				"rating": 1050,
+				"country": "India"
+            
+        }, {
+            
+        "id": 1003,
+        "name": "Hashim Amla",
+				"position": 3,
+				"rating": 1025,
+				"country": "SA"
+            
+        }, {
+            
+        "id": 1004,
+        "name": "Quinton de Kock",
+				"position": 4,
+				"rating": 1000,
+				"country": "SA"
+            
+        }, {
+            
+        "id": 1005,
+        "name": "Rohit Sharma",
+				"position": 5,
+				"rating": 980,
+				"country": "India"
+            
+        }, {
+            
+       "id": 1006,
+         "name": "Tillakaratne Dilshan",
+				"position": 6,
+				"rating": 950,
+				"country": "SL"
+            
+        }, {
+            
+         "id": 1007,
+        "name": "Kane Williamson",
+				"position": 7,
+				"rating": 925,
+				"country": "NZ"
+            
+        }, {
+            
+         "id": 1008,
+         "name": "Martin Guptil",
+				"position": 8,
+				"rating": 910,
+				"country": "NZ"
+            
+        }, {
+            
+        "id": 1009,
+         "name": "Shikhar Dhawan",
+				"position": 9,
+				"rating": 870,
+				"country": "India"
+            
+        }, {
+           
+        "id": 1010,
+        "name": "Rahul Sharma",
+				"position": 10,
+				"rating": 860,
+				"country": "Australia"
+            
+        }
+    ]
+}

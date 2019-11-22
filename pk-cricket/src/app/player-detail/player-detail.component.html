@@ -1,0 +1,80 @@
+<app-app-header [showBack]="parentMessage"></app-app-header>
+<app-navigation-bar [showSearch]="parentSearch" (messageSecondPageEvent)="receiveSecondPageMessage($event)"  ></app-navigation-bar>
+<app-player-rate></app-player-rate>
+<div class="first-img">
+    <img class="image-sizes" src={{singleDetail.main}} alt="Flowers in Chania">
+</div>
+<div class="player-pos-detail">
+    <div class ="player-det-width">
+        <div class="player-txt"><b>Player</b></div>
+        <div class="colon-txt"><b>:</b></div>
+        <div class="player-name-txt"><b>{{player}}</b></div>
+    </div>
+    <div class ="player-det-width pos-rate-class">
+        <div class="player-txt"><b>Position </b></div>
+        <div class="colon-txt"><b>:</b></div>
+        <div class="player-pos-txt"><b>{{position}}</b></div>
+    </div>
+    <div class ="player-det-width pos-rate-class">
+        <div class="player-txt"><b>Rating</b></div>
+        <div class="colon-txt"><b>:</b></div>
+        <div class="player-rate-txt"><b>{{rating}}</b></div>
+    </div>
+</div>
+<div class="player-all-detail">
+    <div class ="player-det-width">
+        <div class="player-all-txt"><b>Name</b></div>
+        <div class="colon-txt"><b>:</b></div>
+        <div class="player-name-txt"><b>{{player}}</b></div>
+     </div>
+     <div class ="player-det-width ">
+        <div class="player-all-txt"><b>Country</b></div>
+        <div class="colon-txt"><b>:</b></div>
+        <div class="player-name-txt"><b>{{singleDetail.country}}</b></div>
+    </div>
+    <div class ="player-det-width">
+        <div class="player-all-txt"><b>Runs Scored</b></div>
+        <div class="colon-txt"><b>:</b></div>
+        <div class="player-name-txt"><b>{{singleDetail.runscored}}</b></div>
+    </div>
+    <div class ="player-det-width">
+        <div class="player-all-txt"><b>High Score</b></div>
+        <div class="colon-txt"><b>:</b></div>
+        <div class="player-name-txt"><b>{{singleDetail.topscore}}</b></div>
+    </div>
+     <div class ="player-det-width">
+        <div class="player-all-txt"><b>Fours</b></div>
+        <div class="colon-txt"><b>:</b></div>
+        <div class="player-name-txt"><b>{{singleDetail.fours}}</b></div>
+    </div>
+    <div class ="player-det-width">
+        <div class="player-all-txt"><b>Sixes</b></div>
+        <div class="colon-txt"><b>:</b></div>
+        <div class="player-name-txt"><b>{{singleDetail.sixes}}</b></div>
+    </div>
+    <div class ="player-det-width">
+        <div class="player-all-txt"><b>Average</b></div>
+        <div class="colon-txt"><b>:</b></div>
+        <div class="player-name-txt"><b>{{singleDetail.average}}</b></div>
+    </div>
+    <div class ="player-det-width">
+        <div class="player-all-txt"><b>Strike Rate</b></div>
+        <div class="colon-txt"><b>:</b></div>
+        <div class="player-name-txt"><b>{{singleDetail.strikerate}}</b></div>
+    </div>
+</div>
+<div class ="gal-txt-centre"><h3 style="text-align:center">Gallery</h3></div>
+<div class ="gallery-image">
+     <div class="gal-img ">
+        <img class="image-sizes" src={{singleDetail.image1}} alt="Flowers in Chania">
+     </div>
+     <div class="gal-img">
+        <img class="image-sizes" src={{singleDetail.image2}} alt="Flowers in Chania">
+    </div>
+    <div class="gal-img">
+        <img class="image-sizes" src={{singleDetail.image3}} alt="Flowers in Chania">
+    </div>
+    <div class="gal-img">
+        <img class="image-sizes" src={{singleDetail.image4}} alt="Flowers in Chania">
+    </div>
+</div>

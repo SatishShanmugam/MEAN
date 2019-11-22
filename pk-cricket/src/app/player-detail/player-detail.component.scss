@@ -1,0 +1,74 @@
+@import '../../scss/vars';
+.first-img{
+    height: 160px;
+    width: 142px;
+    margin-left: 27px;
+    margin-top: 30px;
+    border:$image-border-theme;
+    float: left;
+    .image-sizes{
+        height: 160px;
+        width: 142px;
+    }
+}
+.player-pos-detail{
+    margin-top: 43px;
+    font-family: $font-global-family;
+    font-size: 28px;
+    color: black;
+    float: left;
+    width: 70%;
+    margin-left: 27px;
+}
+.player-all-detail{
+    font-family: $font-global-family;
+    font-size: 14px;
+    color:black;
+    margin-top: 50px;
+    margin-left: 27px;
+    float: left;
+    width: 100%;
+}
+   
+.player-det-width{
+    width:100%;
+}
+.pos-rate-class{
+    margin-top: 20px;
+}
+.player-txt{
+    float: left;
+    width: 16%;
+}
+.colon-txt{
+    float: left;
+    width: 4%;
+}
+.player-all-txt{
+    float: left;
+    width: 10%;
+}
+.gal-txt-centre{
+    float: left;
+    width: 100%;
+}
+.gallery-image{
+    display: block;
+    width: 70%;
+    text-align: center;
+    margin: 0px auto;
+    .gal-img{
+        height: 160px;
+        width: 142px;
+        margin: 0 15px;
+        border: $image-border-theme;
+        float: left;
+        margin-bottom: 30px;
+    }
+    .image-sizes{
+        height: 160px;
+        width: 142px;
+    }
+}
+
+

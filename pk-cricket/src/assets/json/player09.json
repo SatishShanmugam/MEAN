@@ -1,0 +1,17 @@
+{
+    "id": 1009,
+    "firstname": "Shikhar",
+    "lastname": "Dhawan",
+    "country": "India",
+    "runscored": "4571",
+    "topscore": "137",
+	"fours":"200",
+	"sixes":"40",
+	"average":"45.45",
+	"strikerate":"112",
+	"main":"assets/images/1009/main.jpg",
+	"image1":"assets/images/1009/1.jpg",
+	"image2":"assets/images/1009/2.jpg",
+	"image3":"assets/images/1009/3.jpg",
+	"image4":"assets/images/1009/4.jpg"
+}

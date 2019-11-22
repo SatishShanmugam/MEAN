@@ -1,0 +1,107 @@
+<app-app-header [showBack]="parentMessage"></app-app-header>
+<app-navigation-bar [showSearch]="parentSearch"></app-navigation-bar>
+<app-player-rate></app-player-rate>
+<div class="container">
+    <h2>Register New Player</h2>
+    <form [formGroup]="registerForm"  (ngSubmit)="register()">
+        <label for="position">Position</label>
+      <p [ngClass]="{ 'has-error':isSubmitted &&  formControls.position.errors }">
+        <input type="position" placeholder="Position" formControlName="position">
+      </p>
+  
+      <div *ngIf="isSubmitted && formControls.position.errors" class="help-block">
+        <div style="color: red;" *ngIf="formControls.position.errors.required">Position is required</div>
+      </div>
+      <label for="name">Player Name</label>
+      <p [ngClass]="{ 'has-error':isSubmitted && formControls.name.errors }">
+        <input type="name" placeholder="Name" formControlName="name">
+      </p>
+  
+      <div *ngIf="isSubmitted &&formControls.name.errors" class="help-block">
+        <div style="color: red;" *ngIf="formControls.name.errors.required">Player Name is required</div>
+      </div>
+      <label for="firstname">First Name</label>
+      <p [ngClass]="{ 'has-error':isSubmitted && formControls.firstname.errors }">
+        <input type="firstname" placeholder="First Name" formControlName="firstname">
+      </p>
+  
+      <div *ngIf="isSubmitted &&formControls.firstname.errors" class="help-block">
+        <div style="color: red;" *ngIf="formControls.firstname.errors.required">First Name is required</div>
+      </div>
+      <label for="lastname">Last Name</label>
+      <p [ngClass]="{ 'has-error':isSubmitted && formControls.lastname.errors }">
+        <input type="playerName" placeholder="Last Name" formControlName="lastname">
+      </p>
+  
+      <div *ngIf="isSubmitted &&formControls.lastname.errors" class="help-block">
+        <div style="color: red;" *ngIf="formControls.lastname.errors.required">Last Name is required</div>
+      </div>
+      <label for="rating">Rating</label>
+      <p [ngClass]="{ 'has-error':isSubmitted && formControls.rating.errors }">
+        <input type="rating" placeholder="Rate" formControlName="rating">
+      </p>
+  
+      <div *ngIf="isSubmitted &&formControls.rating.errors" class="help-block">
+        <div style="color: red;" *ngIf="formControls.rating.errors.required">Rating is required</div>
+      </div>
+      <label for="country">Country</label>
+      <p [ngClass]="{ 'has-error':isSubmitted && formControls.country.errors }">
+        <input type="country" placeholder="Country" formControlName="country">
+      </p>
+  
+      <div *ngIf="isSubmitted &&formControls.country.errors" class="help-block">
+        <div style="color: red;" *ngIf="formControls.country.errors.required">Country Name is required</div>
+      </div>
+      <label for="runscored">Run Scored</label>
+      <p [ngClass]="{ 'has-error':isSubmitted && formControls.runscored.errors }">
+        <input type="runscored" placeholder="Run scored" formControlName="runscored">
+      </p>
+  
+      <div *ngIf="isSubmitted &&formControls.runscored.errors" class="help-block">
+        <div style="color: red;" *ngIf="formControls.runscored.errors.required">Run scored is required</div>
+      </div>
+      <label for="topscore">Top Score</label>
+      <p [ngClass]="{ 'has-error':isSubmitted && formControls.topscore.errors }">
+        <input type="topscore" placeholder="Top Score" formControlName="topscore">
+      </p>
+  
+      <div *ngIf="isSubmitted &&formControls.topscore.errors" class="help-block">
+        <div style="color: red;" *ngIf="formControls.topscore.errors.required">Top score is required</div>
+      </div>
+      <label for="fours">Fours</label>
+      <p [ngClass]="{ 'has-error':isSubmitted && formControls.fours.errors }">
+        <input type="fours" placeholder="Fours" formControlName="fours">
+      </p>
+  
+      <div *ngIf="isSubmitted &&formControls.fours.errors" class="help-block">
+        <div style="color: red;" *ngIf="formControls.fours.errors.required">Fours is required</div>
+      </div>
+      <label for="sixes">Sixes</label>
+      <p [ngClass]="{ 'has-error':isSubmitted && formControls.sixes.errors }">
+        <input type="sixes" placeholder="Sixes" formControlName="sixes">
+      </p>
+  
+      <div *ngIf="isSubmitted &&formControls.sixes.errors" class="help-block">
+        <div style="color: red;" *ngIf="formControls.sixes.errors.required">Sixes is required</div>
+      </div>
+      <label for="average">Average</label>
+      <p [ngClass]="{ 'has-error':isSubmitted && formControls.average.errors }">
+        <input type="average" placeholder="Average" formControlName="average">
+      </p>
+  
+      <div *ngIf="isSubmitted &&formControls.average.errors" class="help-block">
+        <div style="color: red;" *ngIf="formControls.average.errors.required">Average is required</div>
+      </div>
+      <label for="strikerate">Strike Rate</label>
+      <p [ngClass]="{ 'has-error':isSubmitted && formControls.strikerate.errors }">
+        <input type="strikerate" placeholder="Strike Rate" formControlName="strikerate">
+      </p>
+  
+      <div *ngIf="isSubmitted &&formControls.strikerate.errors" class="help-block">
+        <div style="color: red;" *ngIf="formControls.strikerate.errors.required">Strike Rate is required</div>
+      </div>
+      <p>
+        <input type="submit" value="Register">
+      </p>
+    </form>
+</div>

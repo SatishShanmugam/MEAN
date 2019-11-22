@@ -1,0 +1,18 @@
+@import '../../scss/vars';
+.app-header{
+    height: 90px;
+    background: $header-theme;
+    .pk-logo{
+        float: left;
+        height: 80px;
+        margin-top: 4px;
+        width: 30%;
+    }
+    .arrow-logo{
+        float: right;
+        height: 43px;
+        width: 37px;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+}

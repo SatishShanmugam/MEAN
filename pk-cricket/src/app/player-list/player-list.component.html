@@ -1,0 +1,23 @@
+<app-app-header [showBack]="parentMessage"></app-app-header>
+<app-navigation-bar [showSearch]="parentSearch" (messageEvent)="receiveMessage($event)" (searchMsgEvent)="receiveSearchMessage($event)"></app-navigation-bar>
+<app-player-rate></app-player-rate>
+<div class="container" >
+        <table class ="table">
+            <thead class ="head-color">
+                <tr class ="head-color-txt">
+                    <th class="position-txt">Position</th>
+                    <th class="player-txt">Player</th>
+                    <th class="rating-txt">Rating</th>
+                    <th class="country-txt">Country</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor= "let data of details |filter:searchTerm " (click)="setClickedRow(data)"> 
+                   <td class="row-border">{{data.position}}</td>
+                   <td class="row-border">{{data.name}}</td>
+                   <td class="row-border">{{data.rating}}</td>
+                   <td class="row-border">{{data.country}}</td>
+                </tr>
+            </tbody>
+        </table>
+</div>

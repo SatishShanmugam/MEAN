@@ -1,0 +1,14 @@
+@import '../../scss/vars';
+.footer-bar{
+    background:$footer-background;
+    width: 1024px;
+    height: 38px;
+    clear: both;
+    .copy-write{
+        text-align:center;
+        color: white;
+        font-size: 15px;
+        font-family: $font-global-family;
+        padding: 8.5px 20px;
+    }
+}

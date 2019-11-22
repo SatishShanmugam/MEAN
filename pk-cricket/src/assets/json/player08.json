@@ -1,0 +1,17 @@
+{
+    "id": 1008,
+    "firstname": "Martin",
+    "lastname": "Guptill",
+    "country": "NZ",
+    "runscored": "3078",
+    "topscore": "237",
+	"fours":"200",
+	"sixes":"40",
+	"average":"45.45",
+	"strikerate":"112",
+	"main":"assets/images/1008/main.jpg",
+	"image1":"assets/images/1008/1.jpg",
+	"image2":"assets/images/1008/2.jpg",
+	"image3":"assets/images/1008/3.jpg",
+	"image4":"assets/images/1008/4.jpg"
+}

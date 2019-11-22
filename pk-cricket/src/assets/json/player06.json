@@ -1,0 +1,17 @@
+{
+    "id": 1006,
+    "firstname": "Tillakarathne",
+    "lastname": "Dilshan",
+    "country": "SL",
+    "runscored": "10216",
+    "topscore": "161",
+	"fours":"200",
+	"sixes":"40",
+	"average":"45.45",
+	"strikerate":"112",
+	"main":"assets/images/1006/main.jpg",
+	"image1":"assets/images/1006/1.jpg",
+	"image2":"assets/images/1006/2.jpg",
+	"image3":"assets/images/1006/3.jpg",
+	"image4":"assets/images/1006/4.jpg"
+}

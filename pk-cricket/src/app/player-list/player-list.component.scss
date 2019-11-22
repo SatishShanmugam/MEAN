@@ -1,0 +1,53 @@
+@import '../../scss/vars';
+.container {
+    width: 100%;
+    min-height: 300px;
+    padding-left: 15px;
+    .table {
+        width: 97%;
+        margin-bottom: 1rem;
+        color: #212529;
+        padding: 0 20px;
+        border-collapse: collapse;
+        .head-color{
+            background:#d2d2d2;
+        }
+        .head-color-txt{
+            color:black;
+            font-size: 20px;
+            font-family: $font-global-family;
+            .position-txt{
+                width:15%;
+            }
+            .player-txt{
+                width:40%;
+            }
+            .country-txt{
+                width:20%;
+            }
+            .rating-txt{
+                width:20%;
+            }
+            .table th{
+                height: 36px;
+            }
+        }
+    }
+    .table tr{
+        height: 34px;
+    }
+    tr.head-color-txt th:first-child {
+        text-align: center;
+      }
+    tr.head-color-txt th {
+        text-align: left;
+    }
+    tr td:first-child {
+        text-align: center;
+      }
+    .row-border{
+        border-bottom: thin solid #d2d2d2;
+    }
+}
+
+

@@ -1,0 +1,17 @@
+{
+    "id": 1004,
+    "firstname": "Quinton ",
+    "lastname": "de Kock",
+    "country": "SA",
+    "runscored": "2319",
+    "topscore": "138",
+	"fours":"200",
+	"sixes":"40",
+	"average":"45.45",
+	"strikerate":"112",
+	"main":"assets/images/1004/main.jpg",
+	"image1":"assets/images/1004/1.jpg",
+	"image2":"assets/images/1004/2.jpg",
+	"image3":"assets/images/1004/3.jpg",
+	"image4":"assets/images/1004/4.jpg"
+}

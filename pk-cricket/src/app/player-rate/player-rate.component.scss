@@ -1,0 +1,35 @@
+@import '../../scss/vars';
+.rating-bar{
+    height: 217px;
+    .parent-green-logo{
+        height: 100%;
+        float: left;
+        margin: 0;
+        width: 57%;
+        position: relative;
+    }
+    .green-logo{
+        width: 100%;
+        float: left;
+        height: 100%;
+        margin: 0;
+    }
+    .icc-txt{
+        position: absolute;
+        top: 90px;
+        margin-left: 27px;
+        font-size: 24px;
+        color:#fff;
+        font-family: $font-global-family;
+    }
+    .batsman-rating{
+        margin-left: 27px;
+        margin-top: 90px;
+        font-size: 24px;
+        float: left;
+        width: 40%;
+        font-size: 24px;
+        color: #60ab59;
+        font-family: $font-global-family;
+    }
+}
