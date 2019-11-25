@@ -6,7 +6,7 @@
     <div  *ngIf="showSearch" class="search-container">
         <form >
           <input list ="browsers" class ="search-placeholder" (keyup)="search($event)" type="text" placeholder="search the player" #player name="search" autocomplete="off" spellcheck="false">
-          <datalist id="browsers">
+          <datalist  id="browsers">
             <option *ngFor= "let data of details" value={{data.name}}>
           </datalist>
           <button (click)="displayDetails(player.value)" class ="search-button">Go</button>

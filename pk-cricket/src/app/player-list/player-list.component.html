@@ -12,7 +12,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor= "let data of details |filter:searchTerm " (click)="setClickedRow(data)"> 
+                <tr *ngFor= "let data of details |paginate: { itemsPerPage: 5, currentPage: p } |filter:searchTerm " (click)="setClickedRow(data)"> 
                    <td class="row-border">{{data.position}}</td>
                    <td class="row-border">{{data.name}}</td>
                    <td class="row-border">{{data.rating}}</td>
@@ -20,4 +20,5 @@
                 </tr>
             </tbody>
         </table>
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>
 </div>

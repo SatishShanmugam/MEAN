@@ -11,7 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FilterPipe } from './filter.pipe';
 import { NewPlayerComponent } from './new-player/new-player.component';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
-
+import {NgxPaginationModule} from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,8 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxPaginationModule
 
   ],
   providers: [],

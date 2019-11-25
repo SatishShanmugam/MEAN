@@ -8,11 +8,13 @@ import { NavigationExtras, Route, Router } from '@angular/router';
 })
 export class PlayerListComponent implements OnInit {
 
+
   details: any;
   searchTerm: string;
   parentMessage = false;
   parentSearch = true;
-  constructor( private router: Router) { }
+  constructor( private router: Router) {
+   }
 
   receiveMessage($event) {
     this.details = $event;
@@ -36,4 +38,5 @@ export class PlayerListComponent implements OnInit {
     };
     this.router.navigateByUrl('/detail', navigationExtras);
   }
+ 
 }
